@@ -1,0 +1,25 @@
+# Python-_pycache-_/
+*.py[cod]
+.venv/
+# Data & models  — never commit
+data/raw/
+*.csv
+*.pt
+*.pth
+checkpoints/
+data/processed/
+*.parquet
+*.h5
+runs/
+*.onnx
+# Secrets  — direct security risk
+.env
+*.key
+mlruns/
+*.pem
+wandb/
+credentials.json
+# Notebooks / OS / IDE
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
