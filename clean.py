@@ -21,5 +21,8 @@ def normalize_columns(df):
         .str.strip()
         .str.lower()
         .str.replace(" ", "_")
+        .str.replace(r"[^a-z0-9_]+", "", regex=True)
     )
     return df
+
+
