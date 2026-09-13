@@ -15,7 +15,7 @@ def handle_missing_values(data):
         return data.fillna(0)
 
 
-def normalize_columns(df):
+def normalize_column(df):
     df.columns = (
         df.columns
         .str.strip()
